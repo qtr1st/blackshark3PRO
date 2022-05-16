@@ -5,6 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo aosp_mobius-user
-add_lunch_combo aosp_mobius-userdebug
-add_lunch_combo aosp_mobius-eng
+PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/twrp_mobius.mk
+
+COMMON_LUNCH_CHOICES :=  twrp_mobius-eng

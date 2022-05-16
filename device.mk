@@ -4,7 +4,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+#Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
-add_lunch_combo aosp_mobius-user
-add_lunch_combo aosp_mobius-userdebug
-add_lunch_combo aosp_mobius-eng
+LOCAL_PATH := device/blackshark/mobius
+

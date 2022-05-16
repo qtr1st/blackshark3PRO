@@ -5,6 +5,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-add_lunch_combo aosp_mobius-user
-add_lunch_combo aosp_mobius-userdebug
-add_lunch_combo aosp_mobius-eng
+LOCAL_PATH := $(call my-dir)
+
+ifeq ($(TARGET_DEVICE),mobius)
+include $(call all-subdir-makefiles,$(LOCAL_PATH))
+endif
