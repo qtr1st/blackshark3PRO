@@ -1,0 +1,6 @@
+# mount point	fstype	device					device2				flags
+/boot		emmc	/dev/block/bootdevice/by-name/boot					flags=slotselect
+/super		emmc	/dev/block/bootdevice/by-name/super					flags=slotselect
+/metadata	ext4	/dev/block/bootdevice/by-name/metadata					noatime,nosuid,nodev,discard                         wait,formattable,wrappedkey,first_stage_mount
+# Removable storage
+/usbstorage      vfat    /dev/block/sdg1
