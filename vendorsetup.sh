@@ -4,7 +4,4 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-
-add_lunch_combo aosp_mobius-user
-add_lunch_combo aosp_mobius-userdebug
-add_lunch_combo aosp_mobius-eng
+export ALLOW_MISSING_DEPENDENCIES=true
